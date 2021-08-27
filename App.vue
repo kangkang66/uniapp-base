@@ -4,6 +4,9 @@
 </style>
 <script>
 	export default {
+		globalData: {  
+			appid: 'app.Vue.globalData.testappid'  
+		},  
 		onLaunch: function() {
 			console.log('App Launch')
 		},

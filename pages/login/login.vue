@@ -76,7 +76,7 @@
 				uni.login({
 					provider: 'weixin',
 					success(login) {
-						that.$u.api.accountWxLoginApi({"appid":"wxde1ba3474c3e6c2a","code":login.code}).then(res => {
+						that.$u.api.accountWxLoginApi({"appid":getApp().globalData.appid,"code":login.code}).then(res => {
 							uni.setStorageSync('token', res.token)
 							if (res.is_new_user) {
 								that.showUserProfileToash = true

@@ -13,11 +13,11 @@
 	export default {
 		data() {
 			return {
-				title: '登录'
+				title: '登录',
 			}
 		},
 		onLoad() {
-
+			
 		},
 		methods: {
 
